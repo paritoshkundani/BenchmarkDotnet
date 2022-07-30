@@ -1,0 +1,171 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\temp\pluralsight\benchmarkDotNet\benchmarktests\BenchmarkTests\bin\Release\net6.0\4bea7b48-21b2-4dc6-b22d-0f8f7c5529fc
+// command took 2.05s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in C:\temp\pluralsight\benchmarkDotNet\benchmarktests\BenchmarkTests\bin\Release\net6.0\4bea7b48-21b2-4dc6-b22d-0f8f7c5529fc
+// command took 4.42s and exited with 0
+// ***** Done, took 00:00:06 (6.64 sec)   *****
+// Found 2 benchmarks:
+//   SecondDateParserBenchmarks.DateWithStringAndSubstring: DefaultJob
+//   SecondDateParserBenchmarks.DateWithStringAndSpan: DefaultJob
+
+// **************************
+// Benchmark: SecondDateParserBenchmarks.DateWithStringAndSubstring: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "4bea7b48-21b2-4dc6-b22d-0f8f7c5529fc.dll" --benchmarkName "BenchmarkTests.SecondDateParserBenchmarks.DateWithStringAndSubstring" --job "Default" --benchmarkId 0 in C:\temp\pluralsight\benchmarkDotNet\benchmarktests\BenchmarkTests\bin\Release\net6.0\4bea7b48-21b2-4dc6-b22d-0f8f7c5529fc\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.2 (6.0.222.6406), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 246900.00 ns, 246.9000 us/op
+WorkloadJitting  1: 1 op, 572500.00 ns, 572.5000 us/op
+
+OverheadJitting  2: 16 op, 349700.00 ns, 21.8562 us/op
+WorkloadJitting  2: 16 op, 412500.00 ns, 25.7812 us/op
+
+WorkloadPilot    1: 16 op, 9100.00 ns, 568.7500 ns/op
+WorkloadPilot    2: 32 op, 10400.00 ns, 325.0000 ns/op
+WorkloadPilot    3: 64 op, 35600.00 ns, 556.2500 ns/op
+WorkloadPilot    4: 128 op, 29600.00 ns, 231.2500 ns/op
+WorkloadPilot    5: 256 op, 63400.00 ns, 247.6562 ns/op
+WorkloadPilot    6: 512 op, 82300.00 ns, 160.7422 ns/op
+WorkloadPilot    7: 1024 op, 388300.00 ns, 379.1992 ns/op
+WorkloadPilot    8: 2048 op, 1002100.00 ns, 489.3066 ns/op
+WorkloadPilot    9: 4096 op, 1025900.00 ns, 250.4639 ns/op
+WorkloadPilot   10: 8192 op, 1494700.00 ns, 182.4585 ns/op
+WorkloadPilot   11: 16384 op, 3789400.00 ns, 231.2866 ns/op
+WorkloadPilot   12: 32768 op, 7247800.00 ns, 221.1853 ns/op
+WorkloadPilot   13: 65536 op, 10737100.00 ns, 163.8351 ns/op
+WorkloadPilot   14: 131072 op, 16519000.00 ns, 126.0300 ns/op
+WorkloadPilot   15: 262144 op, 31567800.00 ns, 120.4216 ns/op
+WorkloadPilot   16: 524288 op, 59339200.00 ns, 113.1805 ns/op
+WorkloadPilot   17: 1048576 op, 107100300.00 ns, 102.1388 ns/op
+WorkloadPilot   18: 2097152 op, 169585600.00 ns, 80.8647 ns/op
+WorkloadPilot   19: 4194304 op, 339093300.00 ns, 80.8461 ns/op
+WorkloadPilot   20: 8388608 op, 668232000.00 ns, 79.6595 ns/op
+
+OverheadWarmup   1: 8388608 op, 19196800.00 ns, 2.2884 ns/op
+OverheadWarmup   2: 8388608 op, 18669300.00 ns, 2.2256 ns/op
+OverheadWarmup   3: 8388608 op, 21451000.00 ns, 2.5572 ns/op
+OverheadWarmup   4: 8388608 op, 19647300.00 ns, 2.3421 ns/op
+OverheadWarmup   5: 8388608 op, 19100800.00 ns, 2.2770 ns/op
+OverheadWarmup   6: 8388608 op, 19517000.00 ns, 2.3266 ns/op
+OverheadWarmup   7: 8388608 op, 25424600.00 ns, 3.0308 ns/op
+OverheadWarmup   8: 8388608 op, 20170800.00 ns, 2.4045 ns/op
+
+OverheadActual   1: 8388608 op, 19810900.00 ns, 2.3616 ns/op
+OverheadActual   2: 8388608 op, 18502000.00 ns, 2.2056 ns/op
+OverheadActual   3: 8388608 op, 18369600.00 ns, 2.1898 ns/op
+OverheadActual   4: 8388608 op, 20531900.00 ns, 2.4476 ns/op
+OverheadActual   5: 8388608 op, 20270800.00 ns, 2.4165 ns/op
+OverheadActual   6: 8388608 op, 19195300.00 ns, 2.2883 ns/op
+OverheadActual   7: 8388608 op, 19976400.00 ns, 2.3814 ns/op
+OverheadActual   8: 8388608 op, 21363000.00 ns, 2.5467 ns/op
+OverheadActual   9: 8388608 op, 24926500.00 ns, 2.9715 ns/op
+OverheadActual  10: 8388608 op, 22175500.00 ns, 2.6435 ns/op
+OverheadActual  11: 8388608 op, 21482900.00 ns, 2.5610 ns/op
+OverheadActual  12: 8388608 op, 20775900.00 ns, 2.4767 ns/op
+OverheadActual  13: 8388608 op, 20226100.00 ns, 2.4111 ns/op
+OverheadActual  14: 8388608 op, 16312900.00 ns, 1.9446 ns/op
+OverheadActual  15: 8388608 op, 16784800.00 ns, 2.0009 ns/op
+OverheadActual  16: 8388608 op, 16326200.00 ns, 1.9462 ns/op
+OverheadActual  17: 8388608 op, 16901300.00 ns, 2.0148 ns/op
+OverheadActual  18: 8388608 op, 17096200.00 ns, 2.0380 ns/op
+OverheadActual  19: 8388608 op, 17047900.00 ns, 2.0323 ns/op
+OverheadActual  20: 8388608 op, 25012800.00 ns, 2.9818 ns/op
+
+WorkloadWarmup   1: 8388608 op, 680153900.00 ns, 81.0807 ns/op
+WorkloadWarmup   2: 8388608 op, 670758700.00 ns, 79.9607 ns/op
+WorkloadWarmup   3: 8388608 op, 656911700.00 ns, 78.3100 ns/op
+WorkloadWarmup   4: 8388608 op, 673069500.00 ns, 80.2361 ns/op
+WorkloadWarmup   5: 8388608 op, 671447800.00 ns, 80.0428 ns/op
+WorkloadWarmup   6: 8388608 op, 667593600.00 ns, 79.5834 ns/op
+WorkloadWarmup   7: 8388608 op, 696374900.00 ns, 83.0144 ns/op
+WorkloadWarmup   8: 8388608 op, 705863600.00 ns, 84.1455 ns/op
+WorkloadWarmup   9: 8388608 op, 732464900.00 ns, 87.3166 ns/op
+WorkloadWarmup  10: 8388608 op, 662212400.00 ns, 78.9419 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 8388608 op, 669173500.00 ns, 79.7717 ns/op
+WorkloadActual   2: 8388608 op, 670116300.00 ns, 79.8841 ns/op
+WorkloadActual   3: 8388608 op, 679225300.00 ns, 80.9700 ns/op
+WorkloadActual   4: 8388608 op, 663830200.00 ns, 79.1347 ns/op
+WorkloadActual   5: 8388608 op, 662527000.00 ns, 78.9794 ns/op
+WorkloadActual   6: 8388608 op, 667536000.00 ns, 79.5765 ns/op
+WorkloadActual   7: 8388608 op, 676236000.00 ns, 80.6136 ns/op
+WorkloadActual   8: 8388608 op, 663980200.00 ns, 79.1526 ns/op
+WorkloadActual   9: 8388608 op, 658389900.00 ns, 78.4862 ns/op
+WorkloadActual  10: 8388608 op, 685260800.00 ns, 81.6895 ns/op
+WorkloadActual  11: 8388608 op, 682096700.00 ns, 81.3123 ns/op
+WorkloadActual  12: 8388608 op, 664538500.00 ns, 79.2192 ns/op
+WorkloadActual  13: 8388608 op, 654712200.00 ns, 78.0478 ns/op
+WorkloadActual  14: 8388608 op, 670056200.00 ns, 79.8769 ns/op
+WorkloadActual  15: 8388608 op, 660587600.00 ns, 78.7482 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 8388608 op, 649279850.00 ns, 77.4002 ns/op
+WorkloadResult   2: 8388608 op, 650222650.00 ns, 77.5126 ns/op
+WorkloadResult   3: 8388608 op, 659331650.00 ns, 78.5985 ns/op
+WorkloadResult   4: 8388608 op, 643936550.00 ns, 76.7632 ns/op
+WorkloadResult   5: 8388608 op, 642633350.00 ns, 76.6079 ns/op
+WorkloadResult   6: 8388608 op, 647642350.00 ns, 77.2050 ns/op
+WorkloadResult   7: 8388608 op, 656342350.00 ns, 78.2421 ns/op
+WorkloadResult   8: 8388608 op, 644086550.00 ns, 76.7811 ns/op
+WorkloadResult   9: 8388608 op, 638496250.00 ns, 76.1147 ns/op
+WorkloadResult  10: 8388608 op, 665367150.00 ns, 79.3179 ns/op
+WorkloadResult  11: 8388608 op, 662203050.00 ns, 78.9408 ns/op
+WorkloadResult  12: 8388608 op, 644644850.00 ns, 76.8477 ns/op
+WorkloadResult  13: 8388608 op, 634818550.00 ns, 75.6763 ns/op
+WorkloadResult  14: 8388608 op, 650162550.00 ns, 77.5054 ns/op
+WorkloadResult  15: 8388608 op, 640693950.00 ns, 76.3767 ns/op
+GC:  256 0 0 805307056 8388608
+Threading:  0 0 8388608
+
+// AfterAll
+// Benchmark Process 97292 has exited with code 0.
+
+Mean = 77.326 ns, StdErr = 0.272 ns (0.35%), N = 15, StdDev = 1.055 ns
+Min = 75.676 ns, Q1 = 76.686 ns, Median = 77.205 ns, Q3 = 77.877 ns, Max = 79.318 ns
+IQR = 1.192 ns, LowerFence = 74.898 ns, UpperFence = 79.665 ns
+ConfidenceInterval = [76.199 ns; 78.453 ns] (CI 99.9%), Margin = 1.127 ns (1.46% of Mean)
+Skewness = 0.4, Kurtosis = 1.98, MValue = 2
+
+// **************************
+// Benchmark: SecondDateParserBenchmarks.DateWithStringAndSpan: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "4bea7b48-21b2-4dc6-b22d-0f8f7c5529fc.dll" --benchmarkName "BenchmarkTests.SecondDateParserBenchmarks.DateWithStringAndSpan" --job "Default" --benchmarkId 1 in C:\temp\pluralsight\benchmarkDotNet\benchmarktests\BenchmarkTests\bin\Release\net6.0\4bea7b48-21b2-4dc6-b22d-0f8f7c5529fc\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.2 (6.0.222.6406), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 228700.00 ns, 228.7000 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Int32.Parse(String s)
+   at BenchmarkTests.DateParser.DateWithStringAndSpan(String dateAsText) in C:\temp\pluralsight\benchmarkDotNet\benchmarktests\BenchmarkTests\DateParser.cs:line 54
+   at BenchmarkTests.SecondDateParserBenchmarks.DateWithStringAndSpan() in C:\temp\pluralsight\benchmarkDotNet\benchmarktests\BenchmarkTests\SecondDateParserBenchmarks.cs:line 30
+   at BenchmarkDotNet.Autogenerated.Runnable_1.WorkloadActionNoUnroll(Int64 invokeCount) in C:\temp\pluralsight\benchmarkDotNet\benchmarktests\BenchmarkTests\bin\Release\net6.0\4bea7b48-21b2-4dc6-b22d-0f8f7c5529fc\4bea7b48-21b2-4dc6-b22d-0f8f7c5529fc.notcs:line 1574
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_1.Run(IHost host, String benchmarkName) in C:\temp\pluralsight\benchmarkDotNet\benchmarktests\BenchmarkTests\bin\Release\net6.0\4bea7b48-21b2-4dc6-b22d-0f8f7c5529fc\4bea7b48-21b2-4dc6-b22d-0f8f7c5529fc.notcs:line 900
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\temp\pluralsight\benchmarkDotNet\benchmarktests\BenchmarkTests\bin\Release\net6.0\4bea7b48-21b2-4dc6-b22d-0f8f7c5529fc\4bea7b48-21b2-4dc6-b22d-0f8f7c5529fc.notcs:line 52
+// AfterAll
+// Benchmark Process 83456 has exited with code -1.
+// * Artifacts cleanup *

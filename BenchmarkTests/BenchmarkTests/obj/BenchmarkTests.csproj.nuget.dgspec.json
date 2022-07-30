@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\temp\\pluralsight\\benchmarkDotNet\\BenchmarkTests\\BenchmarkTests\\BenchmarkTests.csproj": {}
+    "C:\\temp\\pluralsight\\benchmarkDotNet\\benchmarktests\\BenchmarkTests\\BenchmarkTests.csproj": {}
   },
   "projects": {
-    "C:\\temp\\pluralsight\\benchmarkDotNet\\BenchmarkTests\\BenchmarkTests\\BenchmarkTests.csproj": {
+    "C:\\temp\\pluralsight\\benchmarkDotNet\\benchmarktests\\BenchmarkTests\\BenchmarkTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\temp\\pluralsight\\benchmarkDotNet\\BenchmarkTests\\BenchmarkTests\\BenchmarkTests.csproj",
+        "projectUniqueName": "C:\\temp\\pluralsight\\benchmarkDotNet\\benchmarktests\\BenchmarkTests\\BenchmarkTests.csproj",
         "projectName": "BenchmarkTests",
-        "projectPath": "C:\\temp\\pluralsight\\benchmarkDotNet\\BenchmarkTests\\BenchmarkTests\\BenchmarkTests.csproj",
+        "projectPath": "C:\\temp\\pluralsight\\benchmarkDotNet\\benchmarktests\\BenchmarkTests\\BenchmarkTests.csproj",
         "packagesPath": "C:\\Users\\ParitoshKundani\\.nuget\\packages\\",
-        "outputPath": "C:\\temp\\pluralsight\\benchmarkDotNet\\BenchmarkTests\\BenchmarkTests\\obj\\",
+        "outputPath": "C:\\temp\\pluralsight\\benchmarkDotNet\\benchmarktests\\BenchmarkTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,6 +42,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "BenchmarkDotNet": {
+              "target": "Package",
+              "version": "[0.13.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
